@@ -13,8 +13,7 @@ class Index extends React.Component<Props> {
   constructor(props: Props) {
     super(props)
   }
-  componentWillMount() {
-  }
+  componentWillMount() { }
   public render() {
     return (
       <div className="index">
