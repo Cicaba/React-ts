@@ -14,7 +14,6 @@ class Index extends React.Component<Props> {
     super(props)
   }
   componentWillMount() {
-    axios.post("/login?email=Cicaba@163.com&password=yi19950907")
   }
   public render() {
     return (
