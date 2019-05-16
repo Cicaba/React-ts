@@ -18,7 +18,7 @@ class Index extends React.Component<Props> {
     return (
       <div className="index">
         <div className="greeting">
-          Hello {this.props.name + getExclamationMarks(this.props.enthusiasmLevel)}
+          Login {this.props.name + getExclamationMarks(this.props.enthusiasmLevel)}
         </div>
         <div>
           <button onClick={this.props.onDecrement}>-</button>
