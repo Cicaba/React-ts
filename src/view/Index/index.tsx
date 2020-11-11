@@ -4,7 +4,7 @@ import './index.styl';
 
 export interface Props {
   name: string;
-  enthusiasmLevel?: any;
+  number?: any;
   onIncrement?: () => void;
   onDecrement?: () => void;
 }
@@ -18,7 +18,7 @@ class Index extends React.Component<Props> {
     return (
       <div className="index">
         <div className="greeting">
-          Hello {this.props.name + getExclamationMarks(this.props.enthusiasmLevel)}
+          Hello {this.props.name + getExclamationMarks(this.props.number)}
         </div>
         <div>
           <button onClick={this.props.onDecrement}>-</button>

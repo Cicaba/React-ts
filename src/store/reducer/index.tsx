@@ -1,13 +1,13 @@
 import { EnthusiasmAction } from '../actions/index';
-import { StoreState } from '../../types/storeState';
-import { INCREMENT_ENTHUSIASM, DECREMENT_ENTHUSIASM } from '../constants/index';
+import { StateType } from '../state/state';
+import { numberPlus, numberMinus } from '../constants/index';
 
-export function enthusiasm(state: StoreState, action: EnthusiasmAction): StoreState {
+export function enthusiasm(state: StateType, action: EnthusiasmAction): StateType {
   switch (action.type) {
-    case INCREMENT_ENTHUSIASM:
-      return { ...state, enthusiasmLevel: state.enthusiasmLevel + 1 };
-    case DECREMENT_ENTHUSIASM:
-      return { ...state, enthusiasmLevel: Math.max(1, state.enthusiasmLevel - 1) };
+    case numberPlus:
+      return { ...state, number: state.number + 1 };
+    case numberMinus:
+      return { ...state, number: Math.max(1, state.number - 1) };
   }
   return state;
 }

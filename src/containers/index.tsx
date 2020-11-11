@@ -1,12 +1,12 @@
 import Index from '../view/Index/index';
 import * as actions from '../store/actions/index';
-import { StoreState } from '../types/storeState';
+import { StateType } from '../store/state/state';
 import { connect } from 'react-redux';
 
-export function mapStateToProps({ enthusiasmLevel, languageName }: StoreState) {
+export function mapStateToProps({ number, name }: StateType) {
   return {
-    enthusiasmLevel,
-    name: languageName,
+    number,
+    name,
   }
 }
 export function mapDispatchToProps(dispatch: any) {

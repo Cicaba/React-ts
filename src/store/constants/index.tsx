@@ -1,6 +1,6 @@
-export const INCREMENT_ENTHUSIASM = 'INCREMENT_ENTHUSIASM';
-export type INCREMENT_ENTHUSIASM = typeof INCREMENT_ENTHUSIASM;
+export const numberPlus = 'numberPlus';
+export type numberPlus = typeof numberPlus
 
 
-export const DECREMENT_ENTHUSIASM = 'DECREMENT_ENTHUSIASM';
-export type DECREMENT_ENTHUSIASM = typeof DECREMENT_ENTHUSIASM;
+export const numberMinus = 'numberMinus';
+export type numberMinus = typeof numberMinus;
